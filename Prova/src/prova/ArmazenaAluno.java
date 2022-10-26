@@ -79,24 +79,7 @@ public class ArmazenaAluno {
         }
     }
 
-    //Inserir ultimo
-    public void InserirUltimo(Aluno a1) {
 
-        this.Lista_Aluno[this.max] = a1;
-        System.out.println("Aluno inserido com sucesso!");
-    }
-
-    public void insertFirst(Aluno newAluno) {
-        if ((this.ultimo + 1) == this.max) {
-            this.AumentaLista();
-        }
-
-        for (int i = this.ultimo; this.ultimo >= 0; i--) {
-            this.Lista_Aluno[i + 1] = this.Lista_Aluno[i];
-        }
-
-        this.Lista_Aluno[0] = newAluno;
-    }
 }
 
 
